@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView text;
     TextView text2;
+    TextView text3;
     EditText update_text;
 
     @Override
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         text = (TextView) findViewById(R.id.textView);
         text2 = (TextView) findViewById(R.id.textView2);
+        text3 = (TextView) findViewById(R.id.textView3);
         update_text = (EditText) findViewById(R.id.textInput);
         update_text.addTextChangedListener(new TextWatcher() {
             @Override
@@ -43,6 +45,6 @@ public class MainActivity extends AppCompatActivity {
     public void printHW(View v){
         System.out.println("Hello World!");
         text2.setText("Hello World!");
-        text.setText(update_text.getText());
+        text3.setText(update_text.getText());
     }
 }
